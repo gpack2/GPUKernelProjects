@@ -1,0 +1,2 @@
+**CGMLinearSolver**
+This is a linear system solver that uses the CGM (Conjugate Gradient Method) to solve Ax=b problems. CGM iterates toward the correct value very quickly because it avoids computing Hessians and only moves in the direction of the conjugate. This includes a couple custom kernels for matrix-vector multiplication, vector operations, and a shared memory reducer. The main point of this approach is to optimize memory access and reduce computation, which makes it well suited for scientific computing and machine learning (gradient descent).
