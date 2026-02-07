@@ -4,5 +4,5 @@ This is a linear system solver that uses the CGM (Conjugate Gradient Method) to 
 **MRIReconstructer**
 MRI scans are often messy and unclear because they are non-Cartesian (the image data isn’t neatly organized in a cartesian coordinate system). I used a FHD (Fully-Hybrid Domain) algorithm to iteratively reconstruct the image and improve fidelity. This algorithm combines spatial and frequency domain techniques to produce a more accurate and sharp image while reducing memory footprint. 
 
-**IOForMRIReconstructer**
+**MRIReconstructerIO**
 This one builds upon the previous implementation of the FHD algorithm to include real image reading and processing. This version takes an actual image, applies the previous reconstruction algorithm, and outputs the new image. Includes CUDA’s native I/O operations.
